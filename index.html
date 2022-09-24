@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROPEWOODshop</title>
+    <style>
+      h2,
+      p,
+      button {
+        font-family: "Graphik Webfont", -apple-system, "Helvetica Neue",
+          "Droid Sans", Arial, sans-serif;
+      }
+
+      h1 {
+        font-family: Guardian-EgypTT, Charter, "Charter Bitstream", Cambria,
+          "Noto Serif Light", "Droid Serif", Georgia, serif;
+        font-size: 36px;
+        font-weight: 550;
+        letter-spacing: 4px;
+        color: #005eb8;
+        margin: 5px auto 0;
+      }
+
+      h2 {
+        font-size: 15px;
+        font-weight: 300;
+        color: #f7aa00;
+        margin: 0 auto 5px;
+      }
+
+      p {
+        margin-top: 0;
+      }
+
+      strong {
+        font-size: 16px;
+        color: #f7aa00;
+        line-height: 30px;
+        letter-spacing: 1px;
+      }
+
+      span {
+        color: #005eb8;
+      }
+
+      hr {
+        max-width: 85%;
+        opacity: 0.7;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #005eb8;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 250ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: white;
+        color: #005eb8;
+      }
+
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 10px 10px;
+        background: linear-gradient(0.25turn, #8d8daa, #dfdfde, #f7f5f2);
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+
+      .heading {
+        text-align: center;
+        max-width: 85%;
+        margin: 0 auto;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        background: linear-gradient(#bde6f1, #ffe59d);
+      }
+
+      .macrame-chair {
+        display: block;
+        margin: 0 auto;
+        max-width: 40%;
+      }
+
+      .description {
+        margin: 0 45px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .more-info {
+        color: #005eb8;
+        text-decoration: none;
+      }
+
+      .more-info:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .footer-name {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <hr />
+      <div class="heading">
+        <h1>ROPEWOOD</h1>
+        <h2>macrame furniture and wall decor</h2>
+      </div>
+      <hr />
+      <img
+        class="macrame-chair"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/912/original/vika_in_macrame_chair.jpeg?1653208828"
+        alt="Macrame Chair"
+      />
+      <hr />
+      <div class="description">
+        <p>
+          <strong> Welcome to my store 🙋‍♀️ </strong> <br />
+          Macrame swing hammock chair can be of different colors, designs, with
+          different patterns, with other pillows, fringe or tassels! It is
+          suitable for both home and street. Easy to install and maintain.
+        </p>
+        <p>
+          <a
+            href="https://www.etsy.com/shop/ROPEWOODshop"
+            target="_blank"
+            class="more-info"
+          >
+            Browse my collection
+          </a>
+          macrame swing chairs, swings, macrame tapestries, hanging pots, etc
+          and
+          <span>choose yours!</span>
+        </p>
+
+        <p>
+          Each order is individual, so all items must be discussed in detail
+          before making a choice. <br />
+          And I will take into account all your wishes and help to decide.
+          <br />
+          👇
+        </p>
+      </div>
+      <button>Contact me</button>
+      <p class="footer">
+        <em>
+          This page was built by
+          <a
+            href="https://www.instagram.com/olesyakukhar/"
+            target="_blank"
+            class="footer-name"
+          >
+            Olesya
+          </a>
+        </em>
+      </p>
+    </div>
+    <script>
+      function contactMe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let tel = prompt("What is your phone number?");
+        if (name.length > 0 && tel.length > 0) {
+          alert(
+            `Thank you, ${name}! I will contact you soon. Stay safe and have a lovely day!😉`
+          );
+        } else {
+          alert(
+            `☹ You have not entered the required data. Please fill in the contact form again🙏`
+          );
+        }
+      }
+
+      let buttonContactUs = document.querySelector("button");
+      buttonContactUs.addEventListener("click", contactMe);
+    </script>
+  </body>
+</html>
